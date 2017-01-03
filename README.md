@@ -1,9 +1,10 @@
 hs_url_match.lua
 ================
 
-A simple url matcher for Nginx-Lua, using [Intel's Hyperscan](https://01.org/hyperscan)
-(via [luahs](https://github.com/starius/luahs)) for fast, bulk route matching,
-and complies with [FastRoute](https://github.com/nikic/FastRoute) syntax.
+A simple url matcher for [Nginx-Lua](https://github.com/openresty/lua-nginx-module),
+using [Intel's Hyperscan](https://01.org/hyperscan) (via
+[luahs](https://github.com/starius/luahs)) for fast, bulk route matching, and
+complies with [FastRoute](https://github.com/nikic/FastRoute) syntax.
 
 Use this to build your own custom URL router.
 
