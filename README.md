@@ -1,9 +1,11 @@
 hs_url_match.lua
 ================
 
-A simple url matcher for Nginx-Lua, using Intel's Hyperscan for fast, bulk
-route matching, and complies with FastRoute syntax. Use this to build your
-own custom URL router.
+A simple url matcher for Nginx-Lua, using [Intel's Hyperscan](https://01.org/hyperscan)
+(via [luahs](https://github.com/starius/luahs)) for fast, bulk route matching,
+and complies with [FastRoute](https://github.com/nikic/FastRoute) syntax.
+
+Use this to build your own custom URL router.
 
 Basic Usage
 ===========
@@ -27,7 +29,7 @@ match = compiled:match(path)
 --[[ Output Representation:
 match = {
   ["path"] = "/hello/steven62/12/1/2016",
-  ["matches"] = { 
+  ["matches"] = {
     [0] = "/hello/steven62/12/1/2016",
     [1] = "steven62",
     [2] = "12/1/2016",
