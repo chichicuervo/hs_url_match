@@ -44,7 +44,7 @@ local function match_all(route, urlmatch)
     local parsed = urlmatch._regexes
 
     for i, match in ipairs(hsdb:scan(route, urlmatch._scratch) or {}) do
-        matches[#matches + 1] = { route = route, pattern = parsed[match.id], id = match.id }
+        matches[#matches + 1] = { path = route, pattern = parsed[match.id], id = match.id }
     end
 
     table.sort(matches, function (a,b)
